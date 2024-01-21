@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StringFinter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StringFinter_jar</output-path>
+    <root id="archive" name="StringFinter.jar">
+      <element id="module-output" name="StringFinter" />
+    </root>
+  </artifact>
+</component>
