@@ -106,7 +106,6 @@ public class Main {
                 // Добавляем символ новой строки
                 bufferedWriter.newLine();
             }
-
             // Закрываем BufferedWriter и FileWriter
             bufferedWriter.close();
             fileWriter.close();
@@ -123,7 +122,6 @@ public class Main {
 
             // Создаем BufferedWriter для более эффективной записи данных
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
             // Записываем каждую строку массива в файл
             for (Object line : data) {
                 bufferedWriter.write(String.valueOf(line));
@@ -147,14 +145,12 @@ public class Main {
 
             // Создаем BufferedWriter для более эффективной записи данных
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
             // Записываем каждую строку массива в файл
             for (Object line : data) {
                 bufferedWriter.write(String.valueOf(line));
                 // Добавляем символ новой строки
                 bufferedWriter.newLine();
             }
-
             // Закрываем BufferedWriter и FileWriter
             bufferedWriter.close();
             fileWriter.close();
@@ -176,7 +172,7 @@ public class Main {
 
     private static void statistic(List<BigInteger> intList, List<Float> floatList, List<String> stringList, Boolean type) {
         System.out.println("Statistic:");
-        System.out.println("lines: " + intList.size() + floatList.size() + stringList.size());
+        System.out.println("lines: " + "integer "+intList.size()+" float= "+ floatList.size() + " string "+ stringList.size()+ " sum "+(intList.size()+floatList.size()+stringList.size()));
         if (type) {
             BigInteger min = null;
             BigInteger max = null;
